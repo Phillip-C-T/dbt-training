@@ -3,4 +3,4 @@
         materialized='table'
     )
 }}
-Select * from raw.globalmart.customers
+Select * from {{ source('globalmart', 'customers') }}
